@@ -7,11 +7,13 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
-    "start": "next start" 
+    "start": "next start"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^14.1.3",
+    "contentful": "^8.3.5",
     "next": "10.1.3",
     "react": "17.0.2",
     "react-dom": "17.0.2"
