@@ -2,7 +2,16 @@
 const NewsPage = () => {
     return (
         <>
-         <img src="https://i.imgflip.com/59ql86.jpg" />
+            <div className="hero">
+                <div className="container">
+                    <h1>
+                        News Page
+                    </h1>
+                </div>
+            </div>
+            <section className="container content">
+                <img src="https://i.imgflip.com/59ql86.jpg" />
+            </section>       
         </>
     )
 }
