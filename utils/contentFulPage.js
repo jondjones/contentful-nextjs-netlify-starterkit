@@ -1,10 +1,15 @@
-const space = process.env.CONTENTFUL_SPACE_ID;
-const accessToken = process.env.CONTENTFUL_ACCESS_TOKEN;
+const configManager = require('./configManager');
+
+const environment = process.env.CONTENTFUL_ENVIRONMENT;
+const previewMode = process.env.CONTENTFUL_IS_PREVIEW;
+
+const config = configManager.getConfig(environment, previewMode)
 
 const client = require('contentful').createClient({
-    space: space,
-    accessToken: accessToken
-});
+    space: config.spaceId,
+    accessToken: config.accessToken,
+    environment: config.environment
+})
 
 export async function fetchEntries() {
 

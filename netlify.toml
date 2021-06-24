@@ -1,5 +1,5 @@
 [build]
-    command = "npm run build && npm run export"
+    command = "npm run netlify"
     publish = "out"
     functions="dist-functions"
 
