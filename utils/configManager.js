@@ -6,8 +6,8 @@ export const getConfig  = (environment, previewMode) => {
     if (environment === 'staging') {
         accessToken = process.env.STAGING_CONTENTFUL_DELIVERY_TOKEN
     } else {
-        if (previewMode) {
-            accessToken = process.CONTENTFUL_PREVIEW_ACCESS_TOKEN
+        if (previewMode === true) {
+            accessToken = process.env.CONTENTFUL_PREVIEW_ACCESS_TOKEN
         } else {
             accessToken = process.env.CONTENTFUL_ACCESS_TOKEN
         }

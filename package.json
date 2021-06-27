@@ -9,7 +9,8 @@
     "export": "next export",
     "start": "next start",
     "netlify": "npm run build && npm run export",
-    "start-api": "netlify-lambda serve functions"
+    "start-api": "netlify-lambda serve functions",
+    "cypress": "cypress run"
   },
   "author": "",
   "license": "ISC",
@@ -20,5 +21,9 @@
     "next": "10.1.3",
     "react": "17.0.2",
     "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "cypress": "^7.6.0",
+    "netlify-plugin-cypress": "^2.2.0"
   }
 }
